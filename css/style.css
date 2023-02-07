@@ -138,6 +138,53 @@ h2, h3, p {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+.story__img {
+  width: 100%;
+}
 .story__card-text {
   max-width: 20rem;
+}
+
+@media screen and (max-width: 991.98px) {
+  .programs__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .programs__card {
+    margin-top: 2.5rem;
+  }
+  .programs__card-text {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .mission {
+    max-width: 100%;
+  }
+  .programs__card-text {
+    max-width: 100%;
+  }
+  .story__info {
+    max-width: 100%;
+  }
+  .story__card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+  .story .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .story__card-text {
+    max-width: 100%;
+  }
 }
