@@ -39,6 +39,7 @@ h2, h3, p{
 .about-fund__link{
     color: inherit;
 }
+
 .mission{
     max-width: 31rem;
     margin: 2.5rem auto;
@@ -47,7 +48,7 @@ h2, h3, p{
 
 .programs{
     margin: 2.5rem auto 6.25rem;
-    max-width: 100%;
+    width: 100%;
     &__info{
         max-width: 37.5rem;
         text-align: center;
@@ -163,25 +164,48 @@ h2, h3, p{
 
 @media screen and (max-width: 767.98px){
     .mission{
-        max-width: 100%;
+        width: 100%;
     }
     .programs{
+        width: 100%;
+        margin-bottom: 2.5rem;
         &__cards{
             flex-wrap: wrap;
             justify-content: center;
         }
-        &__card-text{
-            max-width: 100%;
+        &__card{
+            flex-basis: 100%;
+            margin-bottom: 1rem;
+        }
+        &__card-img{
+            margin: 0 auto;
+        }
+        &__card-title{
+            margin: 1rem auto;
         }
     }
     .story{
+        margin: 2.5rem auto;
         &__info{
-            max-width: 100%;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        &__card-top{
+            width: 100%;
+            margin-bottom: 2.5rem;
+            &-img{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+        &__cards{
+            gap: 2rem;
+            margin-bottom: 2.5rem;
         }
         &__card{
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 2.5rem;
+            gap: 0rem;
         }
         .reverse {
             flex-direction: row;
@@ -191,6 +215,13 @@ h2, h3, p{
         }
         &__card-text{
             width: 100%;
+        }
+        &__card-bottom{
+            width: 100%;
+            margin: 2.5rem auto;
+            &-img{
+                margin: 0;
+            }
         }
     }
 }
