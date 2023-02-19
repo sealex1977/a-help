@@ -20,36 +20,44 @@ h2, h3, p {
 }
 
 .about-fund__title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.5rem;
-  line-height: 118%;
+  line-height: 120%;
+  margin-bottom: 1.25rem;
 }
 
 .about-fund__text {
-  color: #1F1F1F;
-  line-height: 125%;
+  line-height: 130%;
+}
+
+.about-fund__text p {
+  margin: 1rem 0;
+}
+
+.about-fund__text-bold {
+  font-weight: 600;
+  line-height: 120%;
+  margin: 1rem 0;
+}
+
+.about-fund__link {
+  color: inherit;
 }
 
 .mission {
-  max-width: 45%;
-  margin: 11rem auto 5rem;
+  max-width: 31rem;
+  margin: 2.5rem auto;
   text-align: center;
-}
-.mission__title {
-  margin-bottom: 1.75rem;
 }
 
 .programs {
-  margin: 5rem auto;
-  max-width: 90%;
+  margin: 2.5rem auto 6.25rem;
+  max-width: 100%;
 }
 .programs__info {
-  max-width: 25.5rem;
+  max-width: 37.5rem;
   text-align: center;
-  margin: 0 auto 2.25rem;
-}
-.programs__title {
-  margin-bottom: 1.25rem;
+  margin: 0 auto 2rem;
 }
 .programs__cards {
   display: -webkit-box;
@@ -58,9 +66,6 @@ h2, h3, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 2rem;
 }
 .programs__card {
@@ -77,30 +82,44 @@ h2, h3, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.75rem;
+  text-align: center;
 }
 .programs__img {
   width: 100%;
+  height: 100%;
 }
 .programs__card-title {
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 117%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 120%;
+  margin: 1.25rem 0 0.75rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .programs__card-text {
-  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
 }
 
 .story {
-  margin: 0 auto 7.3rem;
+  margin: 6.25rem auto 10rem;
 }
 .story__info {
-  max-width: 25.5rem;
+  max-width: 37.5rem;
   text-align: center;
-  margin: 0 auto 2.25rem;
+  margin: 0 auto 3.75rem;
 }
-.story__title {
-  margin-bottom: 1.25rem;
+.story__card-top {
+  max-width: 37.5rem;
+  text-align: center;
+  margin: 0 auto 6.75rem;
+}
+.story__card-top-img {
+  width: 31.25rem;
+  margin: 0 auto 2rem;
 }
 .story__cards {
   display: -webkit-box;
@@ -113,7 +132,8 @@ h2, h3, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  margin-bottom: 7.5rem;
+  gap: 3.75rem;
 }
 .story__cards:nth-child(odd) {
   -webkit-box-align: end;
@@ -130,7 +150,7 @@ h2, h3, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .story .reverse {
   -webkit-box-orient: horizontal;
@@ -138,31 +158,36 @@ h2, h3, p {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+.story__card-img {
+  width: 40%;
+  max-width: 31.25rem;
+}
 .story__img {
   width: 100%;
 }
 .story__card-text {
-  max-width: 20rem;
+  width: 50%;
+  max-width: 37.5rem;
+}
+.story__card-bottom {
+  max-width: 31.25rem;
+  text-align: center;
+  margin: 7.5rem auto 0;
+}
+.story__card-bottom-img {
+  margin: 0 auto 3rem;
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 767.98px) {
+  .mission {
+    max-width: 100%;
+  }
   .programs__cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .programs__card {
-    margin-top: 2.5rem;
-  }
-  .programs__card-text {
-    max-width: 60%;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .mission {
-    max-width: 100%;
   }
   .programs__card-text {
     max-width: 100%;
@@ -184,7 +209,10 @@ h2, h3, p {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .story__card-img {
+    width: 100%;
+  }
   .story__card-text {
-    max-width: 100%;
+    width: 100%;
   }
 }
