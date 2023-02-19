@@ -261,4 +261,7 @@ h2, h3, p {
   .story__card-bottom-img {
     margin: 0;
   }
+  .about-fund__text {
+    text-align: justify;
+  }
 }
