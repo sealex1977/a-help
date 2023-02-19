@@ -52,7 +52,7 @@ h2, h3, p {
 
 .programs {
   margin: 2.5rem auto 6.25rem;
-  max-width: 100%;
+  width: 100%;
 }
 .programs__info {
   max-width: 37.5rem;
@@ -191,7 +191,11 @@ h2, h3, p {
 
 @media screen and (max-width: 767.98px) {
   .mission {
-    max-width: 100%;
+    width: 100%;
+  }
+  .programs {
+    width: 100%;
+    margin-bottom: 2.5rem;
   }
   .programs__cards {
     -ms-flex-wrap: wrap;
@@ -200,11 +204,35 @@ h2, h3, p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .programs__card-text {
-    max-width: 100%;
+  .programs__card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+  .programs__card-img {
+    margin: 0 auto;
+  }
+  .programs__card-title {
+    margin: 1rem auto;
+  }
+  .story {
+    margin: 2.5rem auto;
   }
   .story__info {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .story__card-top {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .story__card-top-img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .story__cards {
+    gap: 2rem;
+    margin-bottom: 2.5rem;
   }
   .story__card {
     -webkit-box-pack: center;
@@ -212,7 +240,7 @@ h2, h3, p {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 2.5rem;
+    gap: 0rem;
   }
   .story .reverse {
     -webkit-box-orient: horizontal;
@@ -225,5 +253,12 @@ h2, h3, p {
   }
   .story__card-text {
     width: 100%;
+  }
+  .story__card-bottom {
+    width: 100%;
+    margin: 2.5rem auto;
+  }
+  .story__card-bottom-img {
+    margin: 0;
   }
 }
