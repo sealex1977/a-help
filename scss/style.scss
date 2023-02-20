@@ -16,7 +16,7 @@ h2, h3, p{
     background-color: #fff;
 }
 .container{
-    width: 80%;
+    width: 86%;
     margin: 0 auto;
 }
 .about-fund__title{
@@ -71,7 +71,6 @@ h2, h3, p{
     }
     &__card-img{
         max-width: 24.5rem;
-        // height: 12.75rem;
     }
     &__img{
         width: 100%;
@@ -225,6 +224,6 @@ h2, h3, p{
         }
     }
     .about-fund__text{
-        text-align: justify;
+        text-align: center;
     }
 }
